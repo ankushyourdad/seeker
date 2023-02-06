@@ -86,8 +86,8 @@ from signal import SIGTERM
 def banner():
 	with open(META_FILE, 'r') as metadata:
 		json_data = loads(metadata.read())
-		twitter_url = json_data['twitter']
-		comms_url = json_data['comms']
+		insta = json_data['instagram']
+		discord = json_data['discord']
 
 	art = r'''
                         __
@@ -97,9 +97,9 @@ def banner():
 /____  > \___  >\___  >|__|_ \ \___  >|__|
      \/      \/     \/      \/     \/'''
 	print(f'{G}{art}{W}\n')
-	print(f'{G}[>] {C}Created By   : {W}thewhiteh4t')
-	print(f'{G} |---> {C}Twitter   : {W}{twitter_url}')
-	print(f'{G} |---> {C}Community : {W}{comms_url}')
+	print(f'{G}[>] {C}Created By   : {W}Ankush')
+	print(f'{G} |---> {C}Instagram   : {W}{insta}')
+	print(f'{G} |---> {C}Discord : {W}{discord}')
 	print(f'{G}[>] {C}Version      : {W}{VERSION}\n')
 
 
